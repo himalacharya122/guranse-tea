@@ -9,14 +9,30 @@ export default {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
     ],
-
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            colors: {
+                // Your custom Guranse Tea colors
+                'guranse': {
+                    'primary': '#065841',    // Banners, Buttons and Highlights
+                    'text': '#455560',  // Text Color
+                    'accent': '#D97706',     // accent color for highlights and buttons
+                    'png-background': '#E0E0E0',       // Background for png images/products
+                    'background': '#F5E8DB', // Background color for sections
+                }
             },
+            fontFamily: {
+                // Your custom fonts
+                'recoleta': ['Recoleta', ...defaultTheme.fontFamily.serif],
+                'metropolis': ['Metropolis', ...defaultTheme.fontFamily.sans],
+                'nunito': ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+                // Keep the default sans as fallback
+                sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+            },
+            letterSpacing: {
+                'metropolis': '0.05em', // 10% letter spacing for Metropolis
+            }
         },
     },
-
     plugins: [forms],
 };

@@ -1,3 +1,103 @@
+/* @import './scrollbar.css'; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/fonts/Recoleta-Regular.woff2') format('woff2'),
+         url('/fonts/Recoleta-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/fonts/Recoleta-Medium.woff2') format('woff2'),
+         url('/fonts/Recoleta-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Regular.woff2') format('woff2'),
+         url('/fonts/Metropolis-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Medium.woff2') format('woff2'),
+         url('/fonts/Metropolis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-semiBold.woff2') format('woff2'),
+         url('/fonts/Metropolis-semiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Bold.woff2') format('woff2'),
+         url('/fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Regular.woff2') format('woff2'),
+         url('/fonts/NunitoSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Medium.woff2') format('woff2'),
+         url('/fonts/NunitoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-semiBold.woff2') format('woff2'),
+         url('/fonts/NunitoSans-semiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Bold.woff2') format('woff2'),
+         url('/fonts/NunitoSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Custom utility classes */
+@layer utilities {
+    .font-metropolis-spaced {
+        font-family: 'Metropolis', sans-serif;
+        letter-spacing: 0.1em;
+    }
+}

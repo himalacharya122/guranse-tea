@@ -1,0 +1,62 @@
+/* Ultra Clean Scrollbar - Small Width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Pure white */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af; /* Nice medium gray */
+  border-radius: 3px;
+  border: 1px solid #000000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151; /* Darker gray on hover */
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #111827; /* Almost black when clicked */
+  transform: scale(0.9);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000000;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af #000000;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border: 0.5px solid #000000;
+  }
+}
+
+@media (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 3px; /* Very thin on mobile */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border: none;
+  }
+}
